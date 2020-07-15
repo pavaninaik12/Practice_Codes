@@ -1,4 +1,4 @@
-class ABC
+class A
 { void a()
  {System.out.println("A-class-a-Method");
  }
@@ -7,15 +7,14 @@ class ABC
 	System.out.println("d-Method");	
 	}
 }
-class Dog3 extends ABC
-{
- void b()
- { super.d(); //...SUPER - Key Word...
-   System.out.println("B-class-b-Method");
- }
- void c()
+class Dog3 extends A
+{ void c()
  {
  System.out.println("B-class-a-Method");
+ }
+ void b()
+ {super.d(); //...SUPER - Key Word...
+ System.out.println("B-class-b-Method");
  }
  public static void main(String args[])
  { Dog3 b1=new Dog3(); 
